@@ -43,7 +43,7 @@ text, tspan {white-space: pre;}
 <tspan x="15" y="490">@@+.+#+:=+****++***#########+.-##--     </tspan>
 <tspan x="15" y="510">.  -**#-=+*******##########+::*#%=      </tspan>
 </text>
-<text x="390" y="30" fill="#24292f">
+<text x="390" y="30" fill="#c9d1d9">
 <tspan x="390" y="30">hugo.montan</tspan> -———————————————————————————————————————————-—-
 <tspan x="390" y="50" class="cc">. </tspan><tspan class="key">OS</tspan>:<tspan class="cc"> ....................... </tspan><tspan class="value">Windows 10, Android 14, Linux</tspan>
 <tspan x="390" y="70" class="cc">. </tspan><tspan class="key">Uptime</tspan>:<tspan class="cc" id="age_data_dots"> ..................... </tspan><tspan class="value" id="age_data">20 years, 0 months, 23 days</tspan>
