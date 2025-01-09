@@ -11,6 +11,11 @@
 |-----------------------------|-----------------------------|
 | I'm an **administration student** at **Inteli**, immersed in **finance** and **cryptoassets**.  I've been active in the **Brazilian crypto ecosystem** since I was **15**, working in **asset management** and **financial research**.  Now, I'm exploring new opportunities in **traditional finance**. | <img src="hgmt.jpg" alt="Me" width="600"/> |
 
+| Languages and previous projects                   | Image                       |
+|-----------------------------|-----------------------------|
+| I've been programming in **Python** and **R** since I was **16 years old**. My work primarily focuses on **quantitative analysis** of data derived from the **traditional market** and **cryptoassets**, aiming to support **real investment decisions**. | <img src="pyr.jpg" alt="Me" width="520"/> |
+
+
 | Fun Fact                          | Image                      |
 |-----------------------------------|---------------------------------------|
 | I've followed **politics** since age **10**, sparked by **newspapers**. Last year, I faced **legal trouble** for a stunt: placing a **meme of Minister Haddad** on a **Times Square billboard**. It caught attention, and the **Attorney General of the Union** threatened an **investigation**. | <img src="haddad.jpg" alt="Meme of Minister Haddad" width="600"/> |
