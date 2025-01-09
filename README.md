@@ -1,3 +1,13 @@
+<a href="https://github.com/hugomontan/hugomontan">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hugomontan/hugomontan/main/dark_mode.svg">
+    <img alt="Hugo Montan's GitHub Profile README" src="https://raw.githubusercontent.com/hugomontan/hugomontan/main/light_mode.svg">
+  </picture>
+</a>
+
+
+
+
 <table style="width: 100%; max-width: 800px; margin: 20px auto; border-spacing: 0; font-family: Arial, sans-serif;">
   <tr>
     <td style="vertical-align: top; width: 50%; padding: 20px; border-right: 2px solid #e1e4e8; line-height: 1.6; font-size: 16px;">
