@@ -1,40 +1,30 @@
-name: README build
+name: Update GitHub Metrics
+
 on:
-  push:
-    branches:
-      - main
   schedule:
-    - cron: "0 4 * * *"
+    - cron: '0 0 * * *'  # Rodar todos os dias à meia-noite UTC
+  workflow_dispatch:  # Permite acionamento manual via GitHub UI
+
 jobs:
-  build:
+  update-metrics:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 1
-      - name: Get Python 3.8
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.8'
-      - name: Configure pip cache
-        uses: actions/cache@v2
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/cache/requirements.txt') }}
-          restore-keys: ${{ runner.os }}-pip-
-      - name: Install dependencies
-        run: python -m pip install -r cache/requirements.txt
-      - name: Update README file
-        env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          USER_NAME: ${{ secrets.USER_NAME }}
-        run: python today.py
-      - name: Commit
-        run: |-
-          git add .
-          git diff
-          git config --global user.email "github-actions-bot@andrew6rant.github.io"
-          git config --global user.name "Andrew6rant/GitHub-Actions-Bot"
-          git commit -m "Updated README" -a || echo "No changes to commit"
-          git push
+    - name: Checkout the code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: |
+        pip install requests lxml
+
+    - name: Run the update script
+      run: |
+        python update_github_metrics.py
+      env:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        USER_NAME: ${{ secrets.USER_NAME }}
