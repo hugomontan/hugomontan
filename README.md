@@ -23,4 +23,4 @@
 
 Este repositório demonstra uma bandeira tremulando com um efeito 3D:
 
-![Bandeira Tremulando](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGg5amp4Zmx4dnNnc2pxbW04cm8xM3RiaTU4YXo1YzE4ejg4dGdkdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UQupeaKHdeTszhX8EO/giphy.gif)
+<img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGg5amp4Zmx4dnNnc2pxbW04cm8xM3RiaTU4YXo1YzE4ejg4dGdkdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UQupeaKHdeTszhX8EO/giphy.gif" alt="Bandeira Tremulando" width="800" height="auto">
