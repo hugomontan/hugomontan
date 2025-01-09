@@ -19,8 +19,6 @@
 |-----------------------------|-----------------------------|
 | My buddy is Thomaz Klifson, he's in his third year at Inteli, studying computer science. He was also my mentor in the selection process within the Wave Community, a vital part of my approval in the first place.  | <img src="thomaz.jpg" alt="Thomaz" width="490"/> |
 
-# Minha Animação 3D
 
-Este repositório demonstra uma bandeira tremulando com um efeito 3D:
 
-<img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGg5amp4Zmx4dnNnc2pxbW04cm8xM3RiaTU4YXo1YzE4ejg4dGdkdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UQupeaKHdeTszhX8EO/giphy.gif" alt="Bandeira Tremulando" width="800" height="auto">
+<img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGg5amp4Zmx4dnNnc2pxbW04cm8xM3RiaTU4YXo1YzE4ejg4dGdkdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UQupeaKHdeTszhX8EO/giphy.gif" alt="Bandeira Tremulando" width="1050" height="auto">
