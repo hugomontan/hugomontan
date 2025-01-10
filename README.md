@@ -17,11 +17,13 @@
 `here is what i look on my daily basis (updated automatically every 4 hours)`
 
 
+
 <!--START_SECTION:prices-->
-| Bitcoin | Solana | IBOV | S&P 500 | BTG Pactual (rsrs) | USD/BRL |
+| Bitcoin | Solana | IBOV | S&P 500 | BTG Pactual | USD/BRL |
 |:-------:|:------:|:----:|:-------:|:-----------:|:-------:|
-| $93701.66 (-1.41%) | $188.73 (-4.47%) | 119781.0 (+0.13%) | $5918.25 (+0.16%) | R$28.6 (+2.44%) | R$6.04 (-1.14%) |
+| $94568.86 (+2.25%) | $192.05 (+3.8%) | 119781.0 (+0.13%) | $5918.25 (+0.16%) | R$28.6 (+2.44%) | R$6.05 (-0.83%) |
 <!--END_SECTION:prices-->
+
 
 
 
