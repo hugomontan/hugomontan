@@ -44,7 +44,7 @@ def update_readme(prices_and_changes):
     new_content = f"\n{start_marker}\n"
 
     # Cabeçalho da tabela
-    new_content += "| Bitcoin | Solana | IBOV | S&P 500 | BTG Pactual | USD/BRL |\n"
+    new_content += "| Bitcoin | Solana | IBOV | S&P 500 | BTG Pactual (rsrs) | USD/BRL |\n"
     new_content += "|:-------:|:------:|:----:|:-------:|:-----------:|:-------:|\n"
 
     # Preenchendo a tabela com preços e variações
