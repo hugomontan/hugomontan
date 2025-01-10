@@ -2,11 +2,11 @@ import yfinance as yf
 
 # Lista de ativos para monitorar
 assets = {
-    "AAPL": "Apple",
-    "MSFT": "Microsoft",
-    "GOOGL": "Alphabet",
     "BTC-USD": "Bitcoin",
-    "ETH-USD": "Ethereum"
+    "SOL-USD": "Solana",
+    "^BVSP": "IBOVESPA",
+    "^GSPC": "S&P 500",
+    "BPAC11.SA": "BTG Pactual"
 }
 
 # Função para buscar preços
@@ -26,10 +26,12 @@ def update_readme(prices):
     start_marker = "<!--START_SECTION:prices-->"
     end_marker = "<!--END_SECTION:prices-->"
     new_content = f"\n{start_marker}\n"
-    new_content += "| Asset       | Price (USD) |\n"
-    new_content += "|-------------|-------------|\n"
-    for name, price in prices.items():
-        new_content += f"| {name}      | ${price}      |\n"
+    
+    # Criação da tabela horizontal
+    new_content += "| " + " | ".join(prices.keys()) + " |\n"
+    new_content += "| " + " | ".join([":---:" for _ in prices.keys()]) + " |\n"
+    new_content += "| " + " | ".join([f"${price}" for price in prices.values()]) + " |\n"
+    
     new_content += f"{end_marker}\n"
 
     # Lê o conteúdo atual do README
