@@ -7,15 +7,13 @@
 
 
 
+
 <!--START_SECTION:prices-->
-| Asset       | Price (USD) |
-|-------------|-------------|
-| Apple      | $242.7      |
-| Microsoft      | $424.56      |
-| Alphabet      | $193.95      |
-| Bitcoin      | $93830.27      |
-| Ethereum      | $3252.45      |
+| Bitcoin | Solana | IBOVESPA | S&P 500 | BTG Pactual |
+| :---: | :---: | :---: | :---: | :---: |
+| $93836.06 | $189.07 | $119781.0 | $5918.25 | $28.6 |
 <!--END_SECTION:prices-->
+
 
 
 
