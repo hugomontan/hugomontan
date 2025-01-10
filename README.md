@@ -25,5 +25,5 @@
 | My buddy is Thomaz Klifson, he's in his third year at Inteli, studying computer science. He was also my mentor in the selection process within the Wave Community, a vital part of my approval in the first place. His GitHub: https://github.com/Thomaz-Klifson  | <img src="thomaz.jpg" alt="Thomaz" width="660"/> |
 
 
-`896 characters, inteli`
+`inteli in 856 characters [3D ASCII]`
 <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZms2aGYxcXUzejhpM2Rzd3hiYXp1M2xoenc1MTNmZ3B5bjJocjg2aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cNPPIqTmVZQ0Fj0GuP/giphy.gif" alt="Bandeira Tremulando" width="1050" height="auto">
