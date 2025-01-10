@@ -5,9 +5,6 @@
   </picture>
 </a>
 
-# Monitoramento de Preços de Ativos Financeiros
-
-Aqui estão os preços atualizados dos ativos financeiros que estou acompanhando:
 
 
 <!--START_SECTION:prices-->
