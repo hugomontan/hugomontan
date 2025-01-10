@@ -44,7 +44,7 @@
 
 | Buddy                        | Image                      |
 |-----------------------------|-----------------------------|
-| My buddy is Thomaz Klifson, he's in his third year at Inteli, studying computer science. He was also my mentor in the selection process within the Wave Community, a vital part of my approval in the first place. His GitHub: https://github.com/Thomaz-Klifson  | <img src="tmz.jpg" alt="Thomaz" width="660"/> |
+| My buddy is Thomaz Klifson, he's in his third year at Inteli, studying computer science. He was also my mentor in the selection process within the Wave Community, a vital part of my approval in the first place. His GitHub: https://github.com/Thomaz-Klifson  | <img src="tmz2.jpg" alt="Thomaz" width="660"/> |
 
 
 `inteli in 856 characters [3D ASCII]`
