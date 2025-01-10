@@ -14,16 +14,23 @@ def fetch_prices_and_changes(assets):
     prices_and_changes = {}
     for symbol, name in assets.items():
         try:
+            # Busca dados do ativo
             ticker = yf.Ticker(symbol)
-            history = ticker.history(period="2d")  # Busca preços dos últimos 2 dias
-            latest_close = history["Close"].iloc[-1]  # Último preço de fechamento
-            previous_close = history["Close"].iloc[-2]  # Preço de fechamento do dia anterior
-            change_percent = ((latest_close - previous_close) / previous_close) * 100  # Cálculo da variação
+            history = ticker.history(period="5d", interval="1d")  # Ajuste no período para garantir dados
+            print(f"Data for {name} ({symbol}):\n", history)  # Debug: Exibe os dados retornados
+
+            # Calcula preço e variação
+            latest_close = history["Close"].iloc[-1]
+            previous_close = history["Close"].iloc[-2]
+            change_percent = ((latest_close - previous_close) / previous_close) * 100
+
             prices_and_changes[name] = {
                 "price": round(latest_close, 2),
                 "change": round(change_percent, 2),
             }
         except Exception as e:
+            # Debug: Exibe erros no console
+            print(f"Error for {name} ({symbol}): {e}")
             prices_and_changes[name] = {"price": "N/A", "change": "N/A"}
     return prices_and_changes
 
@@ -37,7 +44,7 @@ def update_readme(prices_and_changes):
     new_content += "| Bitcoin | Solana | IBOVESPA | S&P 500 | BTG Pactual |\n"
     new_content += "|:-------:|:------:|:--------:|:-------:|:-----------:|\n"
 
-    # Preços e variações
+    # Preenchendo a tabela com preços e variações
     new_content += "| "
     for name, data in prices_and_changes.items():
         prefix = "$" if name not in ["IBOVESPA", "BTG Pactual"] else "R$" if name == "BTG Pactual" else ""
@@ -61,5 +68,9 @@ def update_readme(prices_and_changes):
 
 # Executar o script
 if __name__ == "__main__":
+    # Busca preços e variações
     prices_and_changes = fetch_prices_and_changes(assets)
+    print("\nFinal Prices and Changes Data:\n", prices_and_changes)  # Debug final: Verifica os dados processados
+
+    # Atualiza o README
     update_readme(prices_and_changes)
