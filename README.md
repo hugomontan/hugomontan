@@ -9,8 +9,17 @@
 
 Aqui estão os preços atualizados dos ativos financeiros que estou acompanhando:
 
+
 <!--START_SECTION:prices-->
+| Asset       | Price (USD) |
+|-------------|-------------|
+| Apple      | $242.7      |
+| Microsoft      | $424.56      |
+| Alphabet      | $193.95      |
+| Bitcoin      | $93830.27      |
+| Ethereum      | $3252.45      |
 <!--END_SECTION:prices-->
+
 
 
 | About me                    | Image                       |
