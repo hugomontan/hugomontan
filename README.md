@@ -13,7 +13,7 @@
 
 | Languages and previous projects                   | Image                       |
 |-----------------------------|-----------------------------|
-| I've been programming in **Python** and **R** since I was **16 years old**. My work primarily focuses on **quantitative analysis** of data derived from the **traditional market** and **cryptoassets**, aiming to support **real investment decisions**. | <img src="pyr.jpg" alt="Me" width="520"/> |
+| Currently, I program in **Python** and **R**, a journey I began at **16 years old**. My primary focus is on **quantitative analysis** of data derived from the **traditional market** and **cryptoassets**, with the goal of supporting **real investment decisions**. | <img src="pyr.jpg" alt="Me" width="540"/> |
 
 
 | Fun Fact                          | Image                      |
