@@ -44,13 +44,18 @@ def update_readme(prices_and_changes):
     new_content = f"\n{start_marker}\n"
 
     # Cabeçalho da tabela
-    new_content += "| Bitcoin | Solana | IBOV | S&P 500 | BTG Pactual (rsrs)| USD/BRL |\n"
+    new_content += "| Bitcoin | Solana | IBOV | S&P 500 | BTG Pactual | USD/BRL |\n"
     new_content += "|:-------:|:------:|:----:|:-------:|:-----------:|:-------:|\n"
 
     # Preenchendo a tabela com preços e variações
     new_content += "| "
     for name, data in prices_and_changes.items():
-        prefix = "$" if name not in ["IBOV", "BTG Pactual", "USD/BRL"] else "R$" if name in ["BTG Pactual", "USD/BRL"] else ""
+        if name in ["IBOV", "S&P 500"]:
+            prefix = ""  # Sem prefixo para IBOV e S&P 500
+        elif name in ["BTG Pactual", "USD/BRL"]:
+            prefix = "R$"  # Prefixo R$ para BTG Pactual e USD/BRL
+        else:
+            prefix = "$"  # Prefixo $ para os demais ativos
         value = f"{prefix}{data['price']} ({data['change']})"
         new_content += f"{value} | "
     new_content = new_content.strip(" |") + " |\n"
