@@ -24,9 +24,6 @@
 
 
 
-Os preços são atualizados automaticamente a cada 4 horas.
-
-
 
 
 | About me                    | Image                       |
