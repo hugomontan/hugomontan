@@ -13,7 +13,7 @@ here is what i look at:
 
 
 <!--START_SECTION:prices-->
-| Bitcoin | Solana | IBOVESPA | S&P 500 | BTG Pactual |
+| Bitcoin | Solana | Ibovespa | S&P 500 | BTG Pactual |
 |:-------:|:------:|:--------:|:-------:|:-----------:|
 | $93842.25 | $189.04 | 119781.0 | $5918.25 | R$28.6 |
 <!--END_SECTION:prices-->
