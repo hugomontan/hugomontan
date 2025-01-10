@@ -5,7 +5,7 @@
   </picture>
 </a>
 
-
+<img src="https://raw.githubusercontent.com/hugomontan/hugomontan/output/snake.svg" alt="Snake animation" />
 
 | About me                    | Image                       |
 |-----------------------------|-----------------------------|
