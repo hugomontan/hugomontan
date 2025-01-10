@@ -9,7 +9,7 @@
 
 | About me                    | Image                       |
 |-----------------------------|-----------------------------|
-| I'm an **administration student** at **Inteli**, immersed in **finance** and **cryptoassets**.  I've been active in the **Brazilian crypto ecosystem** since I was **15**, working in **asset management** and **financial research**.  Now, I'm exploring new opportunities in **traditional finance**. | <img src="hgmt.jpg" alt="Me" width="600"/> |
+| I'm an **administration student** at **Inteli**, immersed in **finance** and **cryptoassets**.  I've been active in the **Brazilian crypto ecosystem** since I was **15**, working in **asset management** and **financial research**.  Now, I'm exploring new opportunities in **traditional finance**. | <img src="hgmt1.jpg" alt="Me" width="600"/> |
 
 | Languages and previous projects                   | Image                       |
 |-----------------------------|-----------------------------|
