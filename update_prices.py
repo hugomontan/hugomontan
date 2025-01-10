@@ -9,36 +9,43 @@ assets = {
     "BPAC11.SA": "BTG Pactual"
 }
 
-# Função para buscar preços
-def fetch_prices(assets):
-    prices = {}
+# Função para buscar preços e variações
+def fetch_prices_and_changes(assets):
+    prices_and_changes = {}
     for symbol, name in assets.items():
         try:
             ticker = yf.Ticker(symbol)
-            price = ticker.history(period="5d")["Close"].dropna().iloc[-1]  # Último preço disponível
-            prices[name] = round(price, 2)
+            history = ticker.history(period="2d")  # Busca preços dos últimos 2 dias
+            latest_close = history["Close"].iloc[-1]  # Último preço de fechamento
+            previous_close = history["Close"].iloc[-2]  # Preço de fechamento do dia anterior
+            change_percent = ((latest_close - previous_close) / previous_close) * 100  # Cálculo da variação
+            prices_and_changes[name] = {
+                "price": round(latest_close, 2),
+                "change": round(change_percent, 2),
+            }
         except Exception as e:
-            prices[name] = "N/A"
-    return prices
+            prices_and_changes[name] = {"price": "N/A", "change": "N/A"}
+    return prices_and_changes
 
 # Atualizar o README.md
-def update_readme(prices):
+def update_readme(prices_and_changes):
     start_marker = "<!--START_SECTION:prices-->"
     end_marker = "<!--END_SECTION:prices-->"
     new_content = f"\n{start_marker}\n"
 
-    # Criação da tabela horizontal com prefixos personalizados
+    # Cabeçalho da tabela
     new_content += "| Bitcoin | Solana | IBOVESPA | S&P 500 | BTG Pactual |\n"
     new_content += "|:-------:|:------:|:--------:|:-------:|:-----------:|\n"
+
+    # Preços e variações
     new_content += "| "
-    for name, price in prices.items():
-        if name == "BTG Pactual":
-            new_content += f"R${price} | "
-        elif name == "IBOVESPA":
-            new_content += f"{price} | "
-        else:
-            new_content += f"${price} | "
+    for name, data in prices_and_changes.items():
+        prefix = "$" if name not in ["IBOVESPA", "BTG Pactual"] else "R$" if name == "BTG Pactual" else ""
+        change = f"{data['change']}%" if data['change'] != "N/A" else "N/A"
+        value = f"{prefix}{data['price']} ({change})"
+        new_content += f"{value} | "
     new_content = new_content.strip(" |") + " |\n"
+
     new_content += f"{end_marker}\n"
 
     # Lê o conteúdo atual do README
@@ -54,5 +61,5 @@ def update_readme(prices):
 
 # Executar o script
 if __name__ == "__main__":
-    prices = fetch_prices(assets)
-    update_readme(prices)
+    prices_and_changes = fetch_prices_and_changes(assets)
+    update_readme(prices_and_changes)
