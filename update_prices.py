@@ -7,7 +7,7 @@ assets = {
     "^BVSP": "IBOV",
     "^GSPC": "S&P 500",
     "BPAC11.SA": "BTG Pactual",
-    "USD-BRL": "USD/BRL"
+    "USDBRL=X": "USD/BRL"
 }
 
 # Função para buscar preços e variações
