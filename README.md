@@ -13,11 +13,12 @@ here is what i look at:
 
 
 <!--START_SECTION:prices-->
-| Bitcoin | Solana | Ibovespa | S&P 500 | BTG Pactual |
-|:-------:|:------:|:--------:|:-------:|:-----------:|
-| $93842.25 | $189.04 | 119781.0 | $5918.25 | R$28.6 |
+| Bitcoin          | Solana          | IBOVESPA        | S&P 500         | BTG Pactual     |
+|:----------------:|:---------------:|:---------------:|:---------------:|:---------------:|
+| $25,645.50 (+1.23%) | $32.50 (-2.34%) | 115,345.90 (+0.87%) | $4,125.60 (-0.45%) | R$32.45 (+1.12%) |
 <!--END_SECTION:prices-->
 
+Os preços são atualizados automaticamente a cada 4 horas.
 
 
 
