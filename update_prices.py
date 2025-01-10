@@ -4,9 +4,10 @@ import yfinance as yf
 assets = {
     "BTC-USD": "Bitcoin",
     "SOL-USD": "Solana",
-    "^BVSP": "IBOVESPA",
+    "^BVSP": "IBOV",
     "^GSPC": "S&P 500",
-    "BPAC11.SA": "BTG Pactual"
+    "BPAC11.SA": "BTG Pactual",
+    "USD-BRL": "USD/BRL"
 }
 
 # Função para buscar preços e variações
@@ -16,7 +17,7 @@ def fetch_prices_and_changes(assets):
         try:
             # Busca dados do ativo
             ticker = yf.Ticker(symbol)
-            history = ticker.history(period="5d", interval="1d")  # Ajuste no período para garantir dados
+            history = ticker.history(period="5d", interval="1d")  # Período ajustado
             print(f"Data for {name} ({symbol}):\n", history)  # Debug: Exibe os dados retornados
 
             # Calcula preço e variação
@@ -24,9 +25,11 @@ def fetch_prices_and_changes(assets):
             previous_close = history["Close"].iloc[-2]
             change_percent = ((latest_close - previous_close) / previous_close) * 100
 
+            # Adiciona "+" para variações positivas
+            change_prefix = "+" if change_percent > 0 else ""
             prices_and_changes[name] = {
                 "price": round(latest_close, 2),
-                "change": round(change_percent, 2),
+                "change": f"{change_prefix}{round(change_percent, 2)}%",  # Formato com "+" para positivo
             }
         except Exception as e:
             # Debug: Exibe erros no console
@@ -41,15 +44,14 @@ def update_readme(prices_and_changes):
     new_content = f"\n{start_marker}\n"
 
     # Cabeçalho da tabela
-    new_content += "| Bitcoin | Solana | IBOVESPA | S&P 500 | BTG Pactual |\n"
-    new_content += "|:-------:|:------:|:--------:|:-------:|:-----------:|\n"
+    new_content += "| Bitcoin | Solana | IBOV | S&P 500 | BTG Pactual | USD/BRL |\n"
+    new_content += "|:-------:|:------:|:----:|:-------:|:-----------:|:-------:|\n"
 
     # Preenchendo a tabela com preços e variações
     new_content += "| "
     for name, data in prices_and_changes.items():
-        prefix = "$" if name not in ["IBOVESPA", "BTG Pactual"] else "R$" if name == "BTG Pactual" else ""
-        change = f"{data['change']}%" if data['change'] != "N/A" else "N/A"
-        value = f"{prefix}{data['price']} ({change})"
+        prefix = "$" if name not in ["IBOV", "BTG Pactual", "USD/BRL"] else "R$" if name in ["BTG Pactual", "USD/BRL"] else ""
+        value = f"{prefix}{data['price']} ({data['change']})"
         new_content += f"{value} | "
     new_content = new_content.strip(" |") + " |\n"
 
