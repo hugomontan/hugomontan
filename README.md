@@ -14,13 +14,12 @@
 
 
 
-`here is what i look on my daily basis:`
+`here is what i look on my daily basis (updated automatically every 4 hours)`
 <!--START_SECTION:prices-->
 | Bitcoin | Solana | IBOVESPA | S&P 500 | BTG Pactual |
 |:-------:|:------:|:--------:|:-------:|:-----------:|
 | $93731.15 (-1.38%) | $189.18 (-4.24%) | 119781.0 (0.13%) | $5918.25 (0.16%) | R$28.6 (2.44%) |
 <!--END_SECTION:prices-->
-`updated automatically every 4 hours`
 
 
 
