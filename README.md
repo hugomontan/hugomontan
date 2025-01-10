@@ -18,7 +18,7 @@
 
 
 <!--START_SECTION:prices-->
-| Bitcoin | Solana | IBOV | S&P 500 | BTG Pactual (rs) | USD/BRL |
+| Bitcoin | Solana | IBOV | S&P 500 | BTG Pactual (rsrs) | USD/BRL |
 |:-------:|:------:|:----:|:-------:|:-----------:|:-------:|
 | $93701.66 (-1.41%) | $188.73 (-4.47%) | 119781.0 (+0.13%) | $5918.25 (+0.16%) | R$28.6 (+2.44%) | R$6.04 (-1.14%) |
 <!--END_SECTION:prices-->
