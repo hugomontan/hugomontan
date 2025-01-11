@@ -1,3 +1,5 @@
+`USE DARK THEME FOR BETTER EXPERIENCE`
+
 <a href="https://github.com/hugomontan/hugomontan">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hugomontan/hugomontan/main/dark_mode.svg">
