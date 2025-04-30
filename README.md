@@ -679,11 +679,13 @@
 
 
 
+
 <!--START_SECTION:prices-->
 | Bitcoin | Solana | IBOV | S&P 500 | BTG Pactual (rsrs) | USD/BRL |
 |:-------:|:------:|:----:|:-------:|:-----------:|:-------:|
 | $N/A (N/A) | $N/A (N/A) | N/A (N/A) | N/A (N/A) | R$N/A (N/A) | R$N/A (N/A) |
 <!--END_SECTION:prices-->
+
 
 
 
